@@ -1,11 +1,27 @@
 package src;
 
 public class TEdge extends Edge {
-    protected int sT = 0; // start time
-    protected int eT = 0; // end time
-    public TEdge(int X, int Y, int C, int sT, int eT) {
-        super(X, Y, C);
-        this.sT = sT;
-        this.eT = eT;
+    protected int flow = 0;
+    protected int startT;
+    protected int endT;
+    public TEdge(int startN, int startT, int endN, int endT, int C) {
+        super(startN, endN, C);
+        this.startT = startT;
+        this.endT = endT;
     }
+    public boolean isFull() {
+        return flow >= C;
+    }
+    public boolean add(int v) {
+        if (flow + v > C) {
+            return false;
+        }
+        flow += v;
+        return true;
+    }
+
+    public int remainingCapacity() {
+        return C - flow;
+    }
+
 }

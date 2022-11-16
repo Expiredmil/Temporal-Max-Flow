@@ -19,7 +19,8 @@ public class Main {
         }
 
         TGraph tg = graph.makeTGraph();
-
+        int maxFlow = tg.getMaxFlow();
+        System.out.println(maxFlow);
 //        Map<Tuple<int, int>, Tuple<int, int>>
     }
 }
