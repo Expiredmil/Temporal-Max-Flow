@@ -12,8 +12,8 @@ public class Graph {
     protected int N; // Locations
     protected int M; // Highways
     protected int T; // Time
-    protected static int source = -2;
-    protected static int sink = -1;
+    protected static int source = 0;
+    protected static int sink;
     protected List<Edge>[] adj;
 
     public Graph (int N, int M, int T) {
@@ -24,6 +24,9 @@ public class Graph {
         for (int i = 0; i < N; i++) {
             adj[i] = new LinkedList<>();
         }
+        sink = N-1;
+        adj[source].add(new Edge(source, source, 1, INF));
+        adj[sink].add(new Edge(sink, sink, 1, INF));
     }
 
 

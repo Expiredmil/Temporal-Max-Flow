@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c064a2d6-a340-4f47-99f1-c59102d55bbe" name="Changes" comment="TODO: Edmonds karp">
-      <change afterPath="$PROJECT_DIR$/src/src/EdmondsKarpSolver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/src/Pair.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/Edge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/Edge.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/src/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/Graph.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/TEdge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/TEdge.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/src/TGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/TGraph.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,6 +37,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "codeWithMe.voiceChat.enabledByDefault": "false",
+    "last_opened_file_path": "C:/Users/DiunR/OneDrive/Radboud/And/Temporal-Max-Flow",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "project.propVCSSupport.Mappings"
   }
@@ -71,6 +67,7 @@
       <option name="presentableId" value="Default" />
       <updated>1668527314880</updated>
       <workItem from="1668527316847" duration="40541000" />
+      <workItem from="1668690917805" duration="6268000" />
     </task>
     <task id="LOCAL-00001" summary="TODO: Edmonds karp">
       <created>1668614162849</created>
@@ -131,8 +128,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/src/TGraph.java</url>
-          <line>32</line>
-          <option name="timeStamp" value="31" />
+          <line>36</line>
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/src/Graph.java</url>
+          <line>58</line>
+          <option name="timeStamp" value="44" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
