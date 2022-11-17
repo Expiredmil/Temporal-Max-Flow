@@ -1,0 +1,18 @@
+Index: src/src/TEdge.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package src;\r\n\r\npublic class TEdge extends Edge {\r\n    protected int flow = 0;\r\n    protected int startT;\r\n    protected int endT;\r\n    public TEdge(int startN, int startT, int endN, int endT, int C) {\r\n        super(startN, endN, C);\r\n        this.startT = startT;\r\n        this.endT = endT;\r\n    }\r\n    public boolean isFull() {\r\n        return flow >= C;\r\n    }\r\n    public boolean add(int v) {\r\n        if (flow + v > C) {\r\n            return false;\r\n        }\r\n        flow += v;\r\n        return true;\r\n    }\r\n\r\n    public int remainingCapacity() {\r\n        return C - flow;\r\n    }\r\n\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/src/TEdge.java b/src/src/TEdge.java
+--- a/src/src/TEdge.java	(revision f7046c17e776124feac84c65d1a37c58d78da9c7)
++++ b/src/src/TEdge.java	(date 1668703590309)
+@@ -4,6 +4,7 @@
+     protected int flow = 0;
+     protected int startT;
+     protected int endT;
++//    protected TEdge reverseEdge;
+     public TEdge(int startN, int startT, int endN, int endT, int C) {
+         super(startN, endN, C);
+         this.startT = startT;

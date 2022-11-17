@@ -1,10 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="c064a2d6-a340-4f47-99f1-c59102d55bbe" name="Changes" comment="TODO: Edmonds karp">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/src/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/Graph.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/src/TGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/TGraph.java" afterDir="false" />
+=======
+    <list default="true" id="c064a2d6-a340-4f47-99f1-c59102d55bbe" name="Changes" comment="Test 1 correct else not">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/EdmondsKarpSolver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/Graph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/Pair.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/TGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/TGraph1.java" afterDir="false" />
+    </list>
+    <list id="29dff104-ff1b-43de-9d7a-d98344489ca8" name="Changes by Emre" comment="">
+      <change beforePath="$PROJECT_DIR$/src/src/TEdge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/TEdge.java" afterDir="false" />
+>>>>>>> f7046c1 (Back edges not working)
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +62,7 @@
       <command value="open Temporal-Max-Flow" />
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Project">
     <configuration name="Project" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="src.Main" />
       <module name="Temporal-Max-Flow" />
@@ -57,6 +70,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.Solution" />
+      <module name="Temporal-Max-Flow" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="src.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Solution" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -67,7 +98,11 @@
       <option name="presentableId" value="Default" />
       <updated>1668527314880</updated>
       <workItem from="1668527316847" duration="40541000" />
+<<<<<<< HEAD
       <workItem from="1668690917805" duration="6268000" />
+=======
+      <workItem from="1668690917805" duration="16875000" />
+>>>>>>> f7046c1 (Back edges not working)
     </task>
     <task id="LOCAL-00001" summary="TODO: Edmonds karp">
       <created>1668614162849</created>
@@ -90,7 +125,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668614467125</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Test 1 correct else not">
+      <created>1668697418626</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1668697418626</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -121,19 +163,28 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="TODO: Edmonds karp" />
-    <option name="LAST_COMMIT_MESSAGE" value="TODO: Edmonds karp" />
+    <MESSAGE value="Test 1 correct else not" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test 1 correct else not" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
+<<<<<<< HEAD
           <url>file://$PROJECT_DIR$/src/src/TGraph.java</url>
+=======
+          <url>file://$PROJECT_DIR$/src/src/TGraph1.java</url>
+>>>>>>> f7046c1 (Back edges not working)
           <line>36</line>
           <option name="timeStamp" value="41" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/src/Graph.java</url>
+<<<<<<< HEAD
           <line>58</line>
+=======
+          <line>59</line>
+>>>>>>> f7046c1 (Back edges not working)
           <option name="timeStamp" value="44" />
         </line-breakpoint>
       </breakpoints>
