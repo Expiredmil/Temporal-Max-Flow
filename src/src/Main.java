@@ -122,8 +122,8 @@ public class Main {
             sink = N-1;
             adj[source].add(new Edge(source, source, 1, INF));
             adj[sink].add(new Edge(sink, sink, 1, INF));
-            superSource = N;
-            superSink = N+1;
+//            superSource = N;
+//            superSink = N+1;
         }
         public void addEdge (Edge edge) {
             adj[edge.startN].add(edge);
@@ -135,12 +135,12 @@ public class Main {
                 Arrays.fill(row, false);
                 row[0] = true;
             }
-            for (int t = 0; t <= T; t++) {
-                tGraph.addEdge(new TEdge(superSource, 0, source, t, INF));
-                tGraph.addEdge(new TEdge(sink, t, superSink, 0, INF));
-                tGraph.addResidualEdge(new TEdge(superSource, 0, source, t, 0, true));
-                tGraph.addResidualEdge(new TEdge(superSink, 0, sink, t, 0, true));
-            }
+//            for (int t = 0; t <= T; t++) {
+//                tGraph.addEdge(new TEdge(superSource, 0, source, t, INF));
+//                tGraph.addEdge(new TEdge(sink, t, superSink, 0, INF));
+//                tGraph.addEdge(new TEdge(source, t, 0, superSource, 0, true));
+//                tGraph.addEdge(new TEdge(sink, t, superSink, 0, 0, true));
+//            }
             for (int n = 0; n < N; n++) {
                 for (int t = 0; t <= T; t++) {
                     for (Edge nadj : adj[n]) {
@@ -151,7 +151,7 @@ public class Main {
                         }
                         if (t + nadj.L <= T ) {
                             tGraph.addEdge(new TEdge(nadj.startN, t, nadj.endN, t + nadj.L, nadj.C));
-                            tGraph.addResidualEdge(new TEdge(nadj.startN, t, nadj.endN, t + nadj.L, 0));
+                            tGraph.addEdge(new TEdge(nadj.endN, t + nadj.L, nadj.startN, t, 0, true));
                             visited[t+nadj.L][nadj.endN] = true;
                         }
                     }
@@ -237,12 +237,11 @@ public class Main {
                         q.offer(next_edge);
                     }
                 }
-                for (TEdge next_edge : residualTAdje[edge.endT][edge.endN]) {
+                for (TEdge next_edge : tAdj[edge.endT][edge.endN]) {
                     if (next_edge.endT == edge.startT && next_edge.endN == edge.startN) {
-                        if (next_edge.reverseFlow != 0 && !visited(next_edge.endT, next_edge.endN)/* prev[next_edge.endT][next_edge.endN] == null && next_edge.endN != superSource*/) {
+                        if (next_edge.reverseFlow != 0 && visited(next_edge.endT, next_edge.endN)/* prev[next_edge.endT][next_edge.endN] == null && next_edge.endN != superSource*/) {
                             prev[next_edge.endT][next_edge.endN] = next_edge;
                             visit(next_edge.endT,next_edge.endN);
-
                             q.offer(next_edge);
                         }
                     }
@@ -348,9 +347,11 @@ public class Main {
         }
 
         public void addResidualEdge(TEdge tEdge) {
-            if (!residualTAdje[tEdge.startT][tEdge.startN].contains(tEdge)) {
-                residualTAdje[tEdge.startT][tEdge.startN].add(tEdge);
+            for (TEdge edge : residualTAdje[tEdge.startT][tEdge.startN]) {
+                if (edge.compareTo(tEdge) > 0)
+                    return;
             }
+            residualTAdje[tEdge.startT][tEdge.startN].add(tEdge);
         }
     }
 

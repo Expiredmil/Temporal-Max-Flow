@@ -1,16 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5730922d-9862-4819-b16b-8b40bb8125dd" name="Changes" comment="implemented back edges with super sink and source, not working">
-      <change afterPath="$PROJECT_DIR$/src/old/Main.java" afterDir="false" />
+    <list default="true" id="5730922d-9862-4819-b16b-8b40bb8125dd" name="Changes" comment="test 13 works">
+      <change afterPath="$PROJECT_DIR$/src/src/Attempt_2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/Main.java" afterDir="false" />
     </list>
-    <list id="b45a15af-cf85-4419-8a02-d0f4cc13792f" name="Changes by Emre" comment="" />
+    <list id="b45a15af-cf85-4419-8a02-d0f4cc13792f" name="Changes by Emre" comment="">
+      <change beforePath="$PROJECT_DIR$/src/old/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/old/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/Main.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -19,6 +29,21 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/src/src/Main.java">
+      <ranges>
+        <range start1="124" end1="126" start2="124" end2="126" changelist="5730922d-9862-4819-b16b-8b40bb8125dd" />
+        <range start1="137" end1="143" start2="137" end2="143" changelist="5730922d-9862-4819-b16b-8b40bb8125dd" />
+        <range start1="153" end1="154" start2="153" end2="154" changelist="5730922d-9862-4819-b16b-8b40bb8125dd" />
+        <range start1="233" end1="234" start2="233" end2="234" changelist="b45a15af-cf85-4419-8a02-d0f4cc13792f" />
+        <range start1="239" end1="240" start2="239" end2="240" changelist="5730922d-9862-4819-b16b-8b40bb8125dd" />
+        <range start1="241" end1="242" start2="241" end2="242" changelist="5730922d-9862-4819-b16b-8b40bb8125dd" />
+        <range start1="244" end1="245" start2="244" end2="244" changelist="5730922d-9862-4819-b16b-8b40bb8125dd" />
+        <range start1="350" end1="352" start2="349" end2="352" changelist="5730922d-9862-4819-b16b-8b40bb8125dd" />
+        <range start1="353" end1="353" start2="353" end2="354" changelist="5730922d-9862-4819-b16b-8b40bb8125dd" />
+      </ranges>
+    </file>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -36,7 +61,20 @@
     "WebServerToolWindowFactoryState": "false"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.Unnamed">
+  <component name="RunManager" selected="Application.Attempt_2">
+    <configuration name="Attempt_2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.Attempt_2" />
+      <module name="Temporal-Max-Flow" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="src.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="daan.Main" />
       <module name="Temporal-Max-Flow" />
@@ -72,13 +110,15 @@
     </configuration>
     <list>
       <item itemvalue="Application.Unnamed" />
+      <item itemvalue="Application.Attempt_2" />
       <item itemvalue="Application.Main" />
       <item itemvalue="Application.old.Main" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.old.Main" />
+        <item itemvalue="Application.Attempt_2" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.old.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -104,9 +144,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1668763495965</updated>
-      <workItem from="1668763497917" duration="3448000" />
+      <workItem from="1668763497917" duration="19538000" />
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="test 13 works">
+      <created>1668767126473</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1668767126473</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -138,17 +185,24 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="TODO: back edges" />
     <MESSAGE value="implemented back edges with super sink and source, not working" />
-    <option name="LAST_COMMIT_MESSAGE" value="implemented back edges with super sink and source, not working" />
+    <MESSAGE value="test 13 works" />
+    <option name="LAST_COMMIT_MESSAGE" value="test 13 works" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/src/Main.java</url>
-          <line>159</line>
-          <option name="timeStamp" value="59" />
+          <url>file://$PROJECT_DIR$/src/src/Attempt_2.java</url>
+          <line>128</line>
+          <option name="timeStamp" value="81" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="graph.temporalAdj[0].get(1)" />
+        <watch expression="graph.temporalAdj[5].get(2)" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
