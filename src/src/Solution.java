@@ -213,9 +213,9 @@ public class Solution {
 
         while ((newFlow = bfs(transformedGraph, 0, N - 1, T, parents)) > 0) {
             currentFlow += newFlow;
-            Pair<Integer, Integer> x = Pair.of(N - 1, T);
+            Pair<Integer, Integer> x = Pair.of(N - 1, T); // sink
             while (!x.equals(Pair.ZERO)) {
-                Pair<Integer, Integer> prev = parents[x.first][x.second];
+                Pair<Integer, Integer> prev = parents[x.first][x.second]; // before sink
                 for (Pair<Pair<Integer, Integer>, Long> element : transformedGraph.get(prev)) {
                     if (element.first.equals(x)) {
                         element.second -= newFlow;

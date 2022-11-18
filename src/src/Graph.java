@@ -25,8 +25,6 @@ public class Graph {
             adj[i] = new LinkedList<>();
         }
     }
-
-
     public void addEdge (Edge edge) {
         adj[edge.startN].add(edge);
     }
