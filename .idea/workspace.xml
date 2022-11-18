@@ -1,26 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5730922d-9862-4819-b16b-8b40bb8125dd" name="Changes" comment="TODO: back edges">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17-11-2022_20_03__Changes_by_Emre_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17-11-2022_20_03__Changes_by_Emre_.xml" afterDir="false" />
+    <list default="true" id="5730922d-9862-4819-b16b-8b40bb8125dd" name="Changes" comment="implemented back edges with super sink and source, not working">
+      <change afterPath="$PROJECT_DIR$/src/old/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/Graph.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/Main$Edge.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/Main$Graph.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/Main$TEdge.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/Main$TGraph.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/Main.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/TGraph1.java" beforeDir="false" />
     </list>
+    <list id="b45a15af-cf85-4419-8a02-d0f4cc13792f" name="Changes by Emre" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2HiMXgQcGPzJyKAnDupJBvMDMMm" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false"
+  }
+}]]></component>
   <component name="RunManager" selected="Application.Unnamed">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="daan.Main" />
@@ -42,16 +57,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="old.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="old.Main" />
+      <module name="Temporal-Max-Flow" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="old.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.Unnamed" />
       <item itemvalue="Application.Main" />
+      <item itemvalue="Application.old.Main" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.old.Main" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task id="LOCAL-00001" summary="TODO: back edges">
       <created>1668713998908</created>
@@ -60,15 +91,45 @@
       <option name="project" value="LOCAL" />
       <updated>1668713998908</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="implemented back edges with super sink and source, not working">
+      <created>1668734088939</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1668734088939</updated>
+    </task>
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5730922d-9862-4819-b16b-8b40bb8125dd" name="Changes" comment="implemented back edges with super sink and source, not working" />
+      <created>1668763495965</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1668763495965</updated>
+      <workItem from="1668763497917" duration="3448000" />
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="Super_sink_and_source" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -76,19 +137,15 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="TODO: back edges" />
-    <option name="LAST_COMMIT_MESSAGE" value="TODO: back edges" />
+    <MESSAGE value="implemented back edges with super sink and source, not working" />
+    <option name="LAST_COMMIT_MESSAGE" value="implemented back edges with super sink and source, not working" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/src/Main.java</url>
-          <line>126</line>
-          <option name="timeStamp" value="58" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/src/Main.java</url>
-          <line>216</line>
+          <line>159</line>
           <option name="timeStamp" value="59" />
         </line-breakpoint>
       </breakpoints>
